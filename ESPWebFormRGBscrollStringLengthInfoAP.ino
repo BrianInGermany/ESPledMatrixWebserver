@@ -6,6 +6,7 @@
  *Thanks to hariFun (https://www.instructables.com/member/HariFun/) for the cool green animation!
  *
  *Connect to ADHOC Network "messageboard" to input wifi password and select network.
+ *Password for "messageboard" is "Washington99"
  * Connect to "http://messageboard.local" or the IP Address shown on board
  * to bring up an HTML form to control the connected LED Matrix. 
  * 
@@ -237,19 +238,6 @@ void returnOK()
   server.sendHeader("Access-Control-Allow-Origin", "*");
   server.send(200, "text/plain", "OK\r\n");
 }
-
-/*
- * Imperative to turn the LED on using a non-browser http client.
- * For example, using wget.
- * $ wget http://esp8266webform/ledon
- */
-
-
-/*
- * Imperative to turn the LED off using a non-browser http client.
- * For example, using wget.
- * $ wget http://esp8266webform/ledoff
- */
 
 
 void handleNotFound()
