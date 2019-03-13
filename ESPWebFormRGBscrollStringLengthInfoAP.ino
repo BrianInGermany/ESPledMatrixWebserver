@@ -399,7 +399,7 @@ void setup(void)
   server.onNotFound(handleNotFound);
 
   server.begin();
-  Serial.print("Connect to http://esp8266WebForm.local or http://");
+  Serial.print("Connect to http://messageboard.local or IP shown on display");
   Serial.println(WiFi.localIP());
   instructions();
 }
